@@ -23,6 +23,7 @@ namespace LinkedListProgram
             linkedlist.AddNode(node3);
             linkedlist.InsertNode(node2, node3);
 
+            linkedlist.DeleteNodeAtFirst();
             linkedlist.Display();
         }
     }
