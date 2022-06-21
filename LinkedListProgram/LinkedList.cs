@@ -29,6 +29,19 @@ namespace LinkedListProgram
                 Head = node;
             }
         }
+        public void AppendNode(Node node)
+        {
+            if (Head == null && Tail == null)
+            {
+                Head = node;
+                Tail = node;
+            }
+            else
+            {
+                Tail.next = node;
+                Tail = node;
+            }
+        }
         public void Display()
         {
             Node temp = Head;
