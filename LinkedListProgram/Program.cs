@@ -24,8 +24,19 @@ namespace LinkedListProgram
             linkedlist.InsertNode(node2, node3);
 
             //linkedlist.DeleteNodeAtFirst();
-            linkedlist.DeleteNodeAtLast();
+            //linkedlist.DeleteNodeAtLast();
             linkedlist.Display();
+            Console.WriteLine("\n====================================");
+
+            if (linkedlist.Search(45) == true)
+            {
+                Console.WriteLine("the value is present in the linked list");
+            }
+            else
+            {
+                Console.WriteLine("the value is not present in the linked list ");
+            }
+            
         }
     }
 }
