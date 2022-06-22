@@ -23,13 +23,18 @@ namespace LinkedListProgram
             linkedlist.AddNode(node1);
             linkedlist.AddNode(node2);
             linkedlist.AddNode(node3);
-            Console.WriteLine("Inserting node after 30");
+            //Console.WriteLine("Inserting node after 30");
             linkedlist.InsertNode(node4, node2);
             //linkedlist.InsertNode(node2, node3);
 
             //linkedlist.DeleteNodeAtFirst();
             //linkedlist.DeleteNodeAtLast();
+            Console.WriteLine("Before deleting ");
             linkedlist.Display();
+            linkedlist.DeleteNodeAtParticularPosition(40);
+            Console.WriteLine("\nAfter deleting ");
+            linkedlist.Display();
+            linkedlist.ListSize();
             //Console.WriteLine("\n====================================");
 
             //if (linkedlist.Search(45) == true)

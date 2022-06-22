@@ -100,6 +100,38 @@ namespace LinkedListProgram
             }
             temp.next = null;
         }
+        public void ListSize()
+        {
+            Node temp = Head;
+            int count = 0;
+            while (temp != null)
+            {
+                count++;
+                temp = temp.next;
+            }
+            Console.WriteLine("\nThe size of the list is {0} ", count);
+        }
+        public void DeleteNodeAtParticularPosition(int position)
+        {
+            Node temp = Head;
+            Node previous = null;
+            
+            if (temp != null && temp.data == position)
+            {
+                Head = temp.next;
+                return;
+            }
+            while (temp != null && temp.data != position)
+            {
+                previous = temp;
+                temp = temp.next;
+            }
+            if (temp == null)
+            {
+                return;
+            }
+            previous.next = temp.next;
+        }
         public void Display()
         {
             Node temp = Head;
